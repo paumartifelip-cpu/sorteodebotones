@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elige tu destino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main class="container">
+        <h1 id="title">Elige tu destino</h1>
+        <div id="game-area">
+            <div class="choices" id="choices">
+                <button class="btn btn-red" onclick="playGame()">Rojo</button>
+                <button class="btn btn-blue" onclick="playGame()">Azul</button>
+            </div>
+            <div class="result-area hidden" id="result-area">
+                <h2 id="result-message"></h2>
+                <button class="btn btn-secondary" onclick="resetGame()">Volver a jugar</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
